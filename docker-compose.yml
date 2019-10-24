@@ -6,7 +6,7 @@ services:
     volumes:
     - "$PWD:/var/www/html"
     labels:
-    - "traefik.http.routers.tunnel.rule=Host(`dev.local`)"
+    - "traefik.http.routers.dev.rule=Host(`dev.local`)"
 
   traefik:
     image: traefik

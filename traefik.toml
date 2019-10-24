@@ -9,9 +9,9 @@
 ################################################################
 # Global configuration
 ################################################################
-[global]
-  checkNewVersion = true
-  sendAnonymousUsage = true
+#[global]
+#  checkNewVersion = true
+#  sendAnonymousUsage = true
 
 ################################################################
 # Entrypoints configuration
