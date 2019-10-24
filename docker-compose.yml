@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  apache:
+    image: php:7.3.10-apache-buster
+    volumes:
+    - "$PWD:/var/www/html"
+    labels:
+    - "traefik.http.routers.tunnel.rule=Host(`dev.local`)"
+
+  traefik:
+    image: traefik
+    ports: 
+    - "8080:8080"
+    - "80:80"
+    - "443:443"
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    - "$PWD/traefik.toml:/etc/traefik/traefik.toml"
