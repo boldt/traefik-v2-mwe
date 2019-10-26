@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   apache:
-    image: php:7.3.10-apache-buster
+    image: php:7.3.11-apache-buster
     volumes:
     - "$PWD:/var/www/html"
     labels:
