@@ -1,6 +1,6 @@
 # README
 
-MWE for a bug report (broken HTTPS).
+MWE for the bug report https://github.com/containous/traefik/issues/5729
 
 ## Clone
 
