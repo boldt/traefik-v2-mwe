@@ -1,13 +1,21 @@
 # README
 
-Start:
+MWE for a bug report (broken HTTPS).
+
+## Clone
 
 ```bash
-docker-compose up
+git clone git@github.com:boldt/traefik-v2-mwe.git
+cd traefik-v2-mwe/
 ```
 
+## Start
 
-Call:
+```bash
+docker-compose up -d
+```
+
+# Test
 
 ```bash
 curl -H Host:whoami.docker.localhost http://127.0.0.1
